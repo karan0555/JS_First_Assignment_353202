@@ -1,10 +1,10 @@
 const readline = require('readline');
 const fs = require('fs');
 
-var out = fs.createWriteStream('part2.json');
+var out = fs.createWriteStream('../json/part2.json');
 
 const rl = readline.createInterface({
-  input: fs.createReadStream('datafile.csv'),
+  input: fs.createReadStream('../input/datafile.csv'),
 
   output: out
 });
